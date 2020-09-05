@@ -1,0 +1,172 @@
+html,
+body {
+    margin: 0;
+    font-size: 100%;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /*--right gutter fix--*/
+}
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+a.navbar-brand,
+.footer h2 a {
+    color: #ffffff;
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+#logo a {
+    float: left;
+    display: initial;
+}
+
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+}
+
+/* Styling the links */
+
+nav a {
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 0 14px;
+}
+
+
+nav ul li ul li:hover {
+    background: #f8f9fa;
+}
+
+/* Background color change on Hover */
+nav a:hover{
+   color:white;
+}
+
+nav li a:hover {
+    color: #ef9632;
+}
+
+.menu li.active a {
+    color: #ef9632;
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width: 768px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    .menu {
+        display: none;
+    }
+
+@media all and (max-width: 330px) {
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+}
+}
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("img/bg-img/landing2.jpg");
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.caption{
+  width:100%;
+  max-width: 100%;
+  position: absolute;
+  top:40%;
+  z-index:1;
+}
+.caption h3{
+  color:white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.btn{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: .5rem 1.1rem;
+  font-size: .9rem;
+}
