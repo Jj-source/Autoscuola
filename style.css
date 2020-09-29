@@ -112,6 +112,9 @@ nav li a:hover {
         display: block;
         width: 94%;
     }
+    .logoRecap{
+      height: 25vh;
+    }
 }
 }
 
@@ -137,7 +140,7 @@ nav li a:hover {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url("img/bg-img/landing1s.jpg");
+    url("img/bg-img/landing1s-min.jpg");
   position: fixed;
   display: table;
   top: 0;
