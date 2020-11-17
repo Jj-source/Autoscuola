@@ -11,6 +11,7 @@ body {
 nav {
     margin: 0;
     padding: 0;
+    font-weight: 700;
 }
 
 a.navbar-brand,
@@ -107,17 +108,22 @@ nav li a:hover {
         display: none;
     }
 
+    #logoRecap{
+      display: none;
+    }
+}
+
 @media all and (max-width: 330px) {
     nav ul li {
         display: block;
         width: 94%;
     }
-    .logoRecap{
-      height: 25vh;
-    }
-}
 }
 
+#logoRecap{
+  max-width:: 740px ;
+  max-height: 125px;
+}
 /*--- iOS Landing Page Fix --*/
 .landing {
   width: 100%;
@@ -140,7 +146,7 @@ nav li a:hover {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url("img/bg-img/landing1s-min.jpg");
+    url("img/bg-img/landing.jpg");
   position: fixed;
   display: table;
   top: 0;
